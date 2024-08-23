@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Advanced Archotech Obliterator -->
+    <HediffDef ParentName="FSFAddedBodyPartArchotech">
+        <defName>AdvancedArchotechObliterator</defName>
+        <label>Advanced archotech obliterator</label>
+        <labelNoun>an advanced archotech obliterator</labelNoun>
+        <description>An installed advanced archotech obliterator.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AdvancedArchotechObliterator</ThingDef>
+            <RecipeDef>InstallAdvancedArchotechObliterator</RecipeDef>
+        </descriptionHyperlinks>
+        <abilities>
+            <!-- custom - advanced shocker arm -->
+            <li>FSFAdvBionicTaser</li>
+            <!-- custom - archotech medic arm -->
+            <li>FSFArchotechMedic</li>
+            <li>FSFArchotechHealSerum</li>
+        </abilities>
+        <stages>
+            <li>
+                <statOffsets>
+                    <!-- custom - archotech medic arm -->
+                    <MedicalOperationSpeed>+1.5</MedicalOperationSpeed>
+                    <MedicalTendSpeed>+1.5</MedicalTendSpeed>
+                    <!-- custom - field arm -->
+                    <PlantWorkSpeed>3.00</PlantWorkSpeed>
+                    <!-- custom - crafting Arm -->
+                    <DrugSynthesisSpeed>+2.5</DrugSynthesisSpeed>
+                    <GeneralLaborSpeed>+2.5</GeneralLaborSpeed>
+                    <!-- custom - construction arm -->
+                    <ConstructionSpeed>3.0</ConstructionSpeed>
+                    <!-- custom - drill arm -->
+                    <MiningSpeed>3.0</MiningSpeed>
+                    <DeepDrillingSpeed>1.0</DeepDrillingSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                            <!-- custom - breaching arm -->
+                            <li>Demolish</li>
+                        </capacities>
+                        <!-- custom - Breaching Arm -->
+                        <power>32</power>
+                        <cooldownTime>0.01</cooldownTime>
+                        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                        <!-- custom - advanced shocker arm -->
+                        <extraMeleeDamages>
+                            <li>
+                                <def>EMP</def>
+                                <amount>30</amount>
+                            </li>
+                        </extraMeleeDamages>
+                        <soundMeleeHit>MeleeHit_BladelinkZeusHammer</soundMeleeHit>
+                        <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <spawnThingOnRemoved>AdvancedArchotechObliterator</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <isGoodWeapon>true</isGoodWeapon>
+            <partEfficiency>4.0</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <tags>
+            <!-- custom - advanced shocker arm -->
+            <li>FSFAdvBionicTaser</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartArchotechBase">
+        <defName>AdvancedArchotechObliterator</defName>
+        <label>advanced archotech obliterator</label>
+        <description>An artificial arm which employs all the benefits of a аdvanced archotech arm, but includes new
+            melee combat features based around attrition and enemy capture. With extremely fast servos the fist is able
+            to extend and retract at remarkable speeds, causing a minature shockwave to form infront of the fist. Its
+            internal workings are a mystery to all human minds.
+        </description>
+        <descriptionHyperlinks>
+            <HediffDef>AdvancedArchotechObliterator</HediffDef>
+            <RecipeDef>InstallAdvancedArchotechObliterator</RecipeDef>
+        </descriptionHyperlinks>
+        <tradeNeverStack>true</tradeNeverStack>
+        <tradeability>None</tradeability>
+        <costList>
+            <ArchotechObliterator>1</ArchotechObliterator>
+            <FSFArchotechMedicArm>1</FSFArchotechMedicArm>
+            <FSFAdvBionicFieldArm>1</FSFAdvBionicFieldArm>
+            <FSFAdvBionicDrillArm>1</FSFAdvBionicDrillArm>
+            <FSFAdvBionicCraftingArm>1</FSFAdvBionicCraftingArm>
+            <FSFAdvBionicConstructionArm>1</FSFAdvBionicConstructionArm>
+            <FSFAdvBionicPowerArm>1</FSFAdvBionicPowerArm>
+            <FSFAdvBionicTaserArm>1</FSFAdvBionicTaserArm>
+            <FSFAdvBionicBreachArm>1</FSFAdvBionicBreachArm>
+            <AIPersonaCore>1</AIPersonaCore>
+            <Steel>50</Steel>
+            <Gold>10</Gold>
+            <Plasteel>50</Plasteel>
+            <ComponentSpacer>10</ComponentSpacer>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>AdvancedFabrication</li>
+                <li>FSFAdvancedSpecializedLimbs</li>
+            </researchPrerequisites>
+            <skillRequirements>
+                <Crafting>15</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <statBases>
+            <MarketValue>100000</MarketValue>
+            <Mass>4</Mass>
+            <ArmorRating_Sharp>1</ArmorRating_Sharp>
+            <ArmorRating_Blunt>1</ArmorRating_Blunt>
+        </statBases>
+        <techHediffsTags>
+            <li>Archotech</li>
+            <li>AdvancedWeapon</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallAdvancedArchotechObliterator</defName>
+        <label>install advanced archotech obliterator</label>
+        <description>Install an advanced archotech obliterator.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AdvancedArchotechObliterator</ThingDef>
+            <HediffDef>AdvancedArchotechObliterator</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing advanced archotech obliterator.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AdvancedArchotechObliterator</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AdvancedArchotechObliterator</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>AdvancedArchotechObliterator</addsHediff>
+    </RecipeDef>
+
+</Defs>

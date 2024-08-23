@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Advanced Archotech Arm</name>
+    <author>NightKosh</author>
+    <packageId>NightKosh.AdvancedArchotechArm</packageId>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <loadAfter>
+        <li>FrozenSnowFox.AdvancedBionicsExpansion</li>
+        <li>Teok25.ArchotechExpanded.Prosthetics</li>
+    </loadAfter>
+    <description>Adds an "Advanced archotech obliterator" arm, based on "Archotech Expanded Prosthetics" and "Advanced Bionics Expansion" mods.
+
+        This new implant gives you all benefits of an "Advanced archotech arm" and "Archotech obliterator arm" from "Archotech Expanded Prosthetics" mod and "Archotech Medic Arm", "Advanced Bionic Field Arm", "Advanced Bionic Drill Arm", "Advanced Bionic Crafting Arm", "Advanced Bionic Construction Arm", "Advanced Bionic Power Arm", "Advanced Bionic Taser Arm" and "Advanced Bionic Breach Arm" from "Advanced Bionics Expansion" mod.
+
+        It requires all those implants(except "Advanced archotech arm"), AI Persona Core, 50 Plasteel, 50 Steel, 100 Gold and 10 Advanced Components and "Advanced Fabrication" and "Advanced Specialized Limbs" researches to be crafted.
+    </description>
+</ModMetaData>
