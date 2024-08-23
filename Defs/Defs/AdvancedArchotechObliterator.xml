@@ -5,18 +5,18 @@
     <HediffDef ParentName="FSFAddedBodyPartArchotech">
         <defName>AdvancedArchotechObliterator</defName>
         <label>Advanced archotech obliterator</label>
-        <labelNoun>an advanced archotech obliterator</labelNoun>
+        <labelNoun>An advanced archotech obliterator</labelNoun>
         <description>An installed advanced archotech obliterator.</description>
         <descriptionHyperlinks>
             <ThingDef>AdvancedArchotechObliterator</ThingDef>
             <RecipeDef>InstallAdvancedArchotechObliterator</RecipeDef>
         </descriptionHyperlinks>
         <abilities>
-            <!-- custom - advanced shocker arm -->
-            <li>FSFAdvBionicTaser</li>
             <!-- custom - archotech medic arm -->
             <li>FSFArchotechMedic</li>
             <li>FSFArchotechHealSerum</li>
+            <!-- custom - advanced shocker arm -->
+            <li>FSFAdvBionicTaser</li>
         </abilities>
         <stages>
             <li>
@@ -80,10 +80,7 @@
     <ThingDef ParentName="BodyPartArchotechBase">
         <defName>AdvancedArchotechObliterator</defName>
         <label>advanced archotech obliterator</label>
-        <description>An artificial arm which employs all the benefits of a аdvanced archotech arm, but includes new
-            melee combat features based around attrition and enemy capture. With extremely fast servos the fist is able
-            to extend and retract at remarkable speeds, causing a minature shockwave to form infront of the fist. Its
-            internal workings are a mystery to all human minds.
+        <description>An advanced archotech obliterator.
         </description>
         <descriptionHyperlinks>
             <HediffDef>AdvancedArchotechObliterator</HediffDef>
