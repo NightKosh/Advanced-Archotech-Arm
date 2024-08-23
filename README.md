@@ -1,4 +1,4 @@
-# [Advanced Archotech Arm mod]()
+# [Advanced Archotech Arm mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3315248786)
 
 This is a Rim World mod, which adds an "Advanced archotech obliterator" arm.
 It is based on "Archotech Expanded Prosthetics" and "Advanced Bionics Expansion" mods(which should be loaded before this mod).
