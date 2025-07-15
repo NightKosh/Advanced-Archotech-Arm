@@ -107,7 +107,7 @@
         <recipeMaker>
             <researchPrerequisites>
                 <li>AdvancedFabrication</li>
-                <li>FSFAdvancedSpecializedLimbs</li>
+                <li>FSFAdvancedSpecializedBionics</li>
             </researchPrerequisites>
             <skillRequirements>
                 <Crafting>15</Crafting>
