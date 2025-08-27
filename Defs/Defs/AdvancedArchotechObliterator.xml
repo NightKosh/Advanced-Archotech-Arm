@@ -22,18 +22,23 @@
             <li>
                 <statOffsets>
                     <!-- custom - archotech medic arm -->
-                    <MedicalOperationSpeed>+1.5</MedicalOperationSpeed>
-                    <MedicalTendSpeed>+1.5</MedicalTendSpeed>
+                    <MedicalOperationSpeed>+3.0</MedicalOperationSpeed>
+                    <MedicalTendSpeed>+3.0</MedicalTendSpeed>
                     <!-- custom - field arm -->
                     <PlantWorkSpeed>3.00</PlantWorkSpeed>
+                    <PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">1.5</PruningSpeed>
                     <!-- custom - crafting Arm -->
-                    <DrugSynthesisSpeed>+2.5</DrugSynthesisSpeed>
-                    <GeneralLaborSpeed>+2.5</GeneralLaborSpeed>
+                    <DrugSynthesisSpeed>+3.0</DrugSynthesisSpeed>
+                    <GeneralLaborSpeed>+3.0</GeneralLaborSpeed>
                     <!-- custom - construction arm -->
                     <ConstructionSpeed>3.0</ConstructionSpeed>
                     <!-- custom - drill arm -->
                     <MiningSpeed>3.0</MiningSpeed>
-                    <DeepDrillingSpeed>1.0</DeepDrillingSpeed>
+                    <DeepDrillingSpeed>1.5</DeepDrillingSpeed>
+                    <!-- custom - chef arm -->
+                    <ButcheryFleshSpeed>+3.0</ButcheryFleshSpeed>
+                    <CookSpeed>+50</CookSpeed>
+                    <DrugCookingSpeed>+3.0</DrugCookingSpeed>
                 </statOffsets>
             </li>
         </stages>
@@ -95,6 +100,7 @@
             <FSFAdvBionicDrillArm>1</FSFAdvBionicDrillArm>
             <FSFAdvBionicCraftingArm>1</FSFAdvBionicCraftingArm>
             <FSFAdvBionicConstructionArm>1</FSFAdvBionicConstructionArm>
+            <FSFAdvBionicCookingArm>1</FSFAdvBionicCookingArm>
             <FSFAdvBionicPowerArm>1</FSFAdvBionicPowerArm>
             <FSFAdvBionicTaserArm>1</FSFAdvBionicTaserArm>
             <FSFAdvBionicBreachArm>1</FSFAdvBionicBreachArm>
